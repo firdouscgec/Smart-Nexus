@@ -1,0 +1,425 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 100%);
+    color: #e0e0e0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    margin-bottom: 40px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.logo h1 {
+    font-size: 2.8em;
+    margin: 0;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.logo .tagline {
+    font-size: 1.1em;
+    color: #b8b8d1;
+    font-style: italic;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(37, 117, 252, 0.3);
+}
+
+.header-content {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.header-content h2 {
+    font-size: 3em;
+    color: #ffffff;
+    margin: 0 0 15px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.header-content p {
+    font-size: 1.4em;
+    color: #d0d0e8;
+    margin: 0;
+}
+
+/* Section Styles */
+section,
+#projects,
+#applications,
+#websites {
+    background: rgba(30, 30, 46, 0.8);
+    margin: 40px 0;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+}
+
+section h2 {
+    color: #ffffff;
+    border-bottom: 3px solid #2575fc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Slider Styles */
+.slider-container {
+    position: relative;
+    padding: 0 40px;
+    overflow: hidden;
+}
+
+.projects-slider,
+.websites-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding: 20px 0;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #2575fc;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 10;
+    box-shadow: 0 4px 15px rgba(37, 117, 252, 0.4);
+}
+
+.slider-btn:hover {
+    background: #6a11cb;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+/* Project Card Styles */
+.project-card {
+    background: rgba(42, 42, 62, 0.9);
+    padding: 20px;
+    padding-bottom: 60px;
+    border-radius: 15px;
+    border-left: 4px solid #2575fc;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    min-width: 300px;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(37, 117, 252, 0.3);
+    border-left-color: #6a11cb;
+}
+
+.project-card h3 {
+    color: #ffffff;
+    margin: 0 0 10px;
+    font-size: 1.4em;
+}
+
+.project-card p {
+    margin: 10px 0;
+    flex-grow: 1;
+    color: #c0c0d8;
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Button Styles */
+.download-btn,
+.view-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(37, 117, 252, 0.3);
+}
+
+.download-btn:hover,
+.view-btn:hover {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(106, 17, 203, 0.4);
+}
+
+.download-btn.disabled {
+    background: #444;
+    cursor: not-allowed;
+    pointer-events: none;
+    box-shadow: none;
+}
+
+.download-btn i {
+    margin-right: 8px;
+}
+
+.project-card .download-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.button-group .view-btn,
+.button-group .download-btn {
+    flex: 1;
+    padding: 10px;
+}
+
+.button-group .download-btn {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    box-shadow: 0 4px 15px rgba(56, 239, 125, 0.3);
+}
+
+.button-group .download-btn:hover {
+    background: linear-gradient(135deg, #38ef7d 0%, #11998e 100%);
+}
+
+/* Features List */
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.features li {
+    padding: 5px 0 5px 25px;
+    position: relative;
+    color: #c0c0d8;
+}
+
+.features li:before {
+    content: "✓";
+    color: #2575fc;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* Contact Icons */
+#contact i {
+    width: 20px;
+    color: #2575fc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 10px;
+    }
+
+    .nav-header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .logo h1 {
+        font-size: 2em;
+    }
+
+    .logo .tagline {
+        font-size: 0.9em;
+    }
+
+    .logo-container {
+        margin-bottom: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 0.95em;
+        padding: 6px 12px;
+    }
+
+    .header-content {
+        padding: 40px 15px;
+    }
+
+    .header-content h2 {
+        font-size: 1.8em;
+    }
+
+    .header-content p {
+        font-size: 1em;
+    }
+
+    /* Section adjustments */
+    section,
+    #projects,
+    #applications,
+    #websites {
+        padding: 20px 15px;
+        margin: 30px 0;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    /* Slider container fixes */
+    .slider-container {
+        padding: 0 10px;
+        margin: 0 -15px;
+    }
+
+    .projects-slider,
+    .websites-slider {
+        gap: 15px;
+        padding: 15px 10px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .project-card {
+        min-width: 280px;
+        max-width: 280px;
+        padding: 15px;
+        padding-bottom: 70px;
+        scroll-snap-align: start;
+    }
+
+    .project-card h3 {
+        font-size: 1.2em;
+    }
+
+    .project-card p {
+        font-size: 0.9em;
+    }
+
+    .project-card img {
+        height: 160px;
+    }
+
+    /* Hide slider buttons on mobile, use swipe instead */
+    .slider-btn {
+        display: none;
+    }
+
+    /* Button adjustments */
+    .download-btn,
+    .view-btn {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    .project-card .download-btn {
+        bottom: 15px;
+        left: 15px;
+        right: 15px;
+        width: calc(100% - 30px);
+    }
+
+    .button-group {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .button-group .view-btn,
+    .button-group .download-btn {
+        width: 100%;
+    }
+
+    /* Features list */
+    .features li {
+        font-size: 0.9em;
+    }
+}
