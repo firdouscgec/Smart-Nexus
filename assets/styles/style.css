@@ -405,7 +405,6 @@ section h2 {
         bottom: 15px;
         left: 15px;
         right: 15px;
-        width: calc(100% - 30px);
     }
 
     .button-group {
@@ -414,7 +413,7 @@ section h2 {
     }
 
     .button-group .view-btn,
-    .button-group .download-btn {
+    .button-group {
         width: 100%;
     }
 
@@ -422,4 +421,5 @@ section h2 {
     .features li {
         font-size: 0.9em;
     }
+
 }
