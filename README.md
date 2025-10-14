@@ -26,7 +26,7 @@ Smart Nexus is a technology-driven platform offering intelligent electrical solu
 
 ## Contact
 - **Email**: firdousrahaman.tfg@gmail.com
-- **Phone**: +91-9876543210
+- **Phone**: +91-8972801049
 - **Instagram**: [instagram.com/firdous_tfg](https://instagram.com/firdous_tfg)
 
 Explore Smart Nexus to experience how we transform ideas into intelligent solutions!
